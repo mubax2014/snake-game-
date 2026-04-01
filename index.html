@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON SNAKE ⚡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu" class="menu">
+    <h1>⚡ NEON SNAKE ⚡</h1>
+    <h2>Choose Game Mode</h2>
+    
+    <div class="mode-buttons">
+      <button onclick="startSinglePlayer()">Single Player</button>
+      <button onclick="startMultiplayer()">Multiplayer (2 Players)</button>
+    </div>
+
+    <div class="instructions">
+      <p><strong>Single Player:</strong> Arrow Keys</p>
+      <p><strong>Multiplayer:</strong> P1 → Arrow Keys | P2 → WASD</p>
+    </div>
+  </div>
+
+  <div id="gameContainer" class="hidden">
+    <h1 id="gameTitle">NEON SNAKE</h1>
+    
+    <div id="scores" class="scores hidden">
+      <div class="player-score p1">P1: <span id="score1">0</span></div>
+      <div class="player-score p2">P2: <span id="score2">0</span></div>
+    </div>
+
+    <canvas id="gameCanvas" width="480" height="480"></canvas>
+
+    <button onclick="returnToMenu()" class="back-btn">Back to Menu</button>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

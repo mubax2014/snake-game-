@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #0a0a1f;
+  font-family: 'Courier New', monospace;
+  color: #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.menu {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+  letter-spacing: 6px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #ff88ff;
+  font-size: 1.8rem;
+}
+
+.mode-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+button {
+  padding: 16px 50px;
+  font-size: 20px;
+  background: transparent;
+  color: #ff00ff;
+  border: 3px solid #ff00ff;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 25px #ff00ff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff00ff;
+  color: #0a0a1f;
+  transform: scale(1.05);
+}
+
+.instructions {
+  margin-top: 40px;
+  font-size: 15px;
+  opacity: 0.8;
+  line-height: 1.8;
+}
+
+#gameContainer {
+  text-align: center;
+}
+
+.scores {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.player-score {
+  text-shadow: 0 0 12px currentColor;
+}
+
+.p1 { color: #00ff88; }
+.p2 { color: #ff44ff; }
+
+canvas {
+  border: 4px solid #00ffff;
+  box-shadow: 0 0 40px #00ffff, 0 0 80px #ff00ff;
+  background: #0a0a1f;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+}
+
+.hidden {
+  display: none !important;
+}
